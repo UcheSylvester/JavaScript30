@@ -58,36 +58,37 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-  
+
   const keys = document.querySelectorAll('.key');
 
+
+  window.addEventListener('keydown', playSound);
+
   function playSound(e) {
+      // console.log(e.keyCode)
 
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
-    if(!audio) return // stoping the function from runing
+      if(!audio) return;    //stop if there is no audio associated with the key
 
-    audio.currentTime = 0;  // rewinding to the start
-    audio.play() //playing the audio
+      audio.play()    //Play Sound
+      audio.currentTime = 0;
 
-    // adding class playing to the key
-    key.classList.add('playing');
+      key.classList.add('playing')    //adding the class playing when sound is played
   }
 
-  function removeStyle(e) {
 
-    if(e.propertyName != 'transform') return;   //stoping the function from running
+  // Removing class playing at the end of the sound
+  keys.forEach(key => key.addEventListener('transitionend', endTransition))
+
+  function endTransition(e) {
+
+    if(e.propertyName !== 'transform') return;
     this.classList.remove('playing');
   }
 
-  // Event Listerners
-  window.addEventListener('keydown', playSound);
-  keys.forEach(key => key.addEventListener('transitionend', removeStyle))
 
-
-
-  
 
 </script>
 
