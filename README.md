@@ -10,7 +10,7 @@ I'm taking the **#JavaScript30 challenge** with [Wes Bos JavaScript30 course](ht
 
 -----
 
-Today I built a fun drum kit using JavaScript! I have done this project before during my first attempt at the **JavaScript30**, so Today I decided to do it myself without going the video and I was able to complete it within 10 minutes!
+Today I built a fun drum kit using JavaScript! I have done this project before during my first attempt at the **JavaScript30**. But, I decided to do it myself without going through the videos and I was able to complete it within 10 minutes!
 
 ###LEARNINGS
 
