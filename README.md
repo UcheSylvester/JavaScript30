@@ -18,3 +18,11 @@ Today I built a fun drum kit using JavaScript! I have done this project before d
 + Got introduced to _transitionend_ event
 + solidified my understanding of _event handling_ 
 
+
+## DAY 2: JS $ CSS CLOCK
+*18TH MAY 2019*
+
++ I learned about the _transform-origin_ css property which is used to specify which part of an element a transform effect should start
++ In addition to _transform_ property values like rotate, I also learned a few more like _skew_, _scale_ and _move_
++ I also learned of the _transistion-timing-function_ and the _cubic bezier_
+
